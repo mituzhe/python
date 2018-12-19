@@ -1,0 +1,4 @@
+#LWP-Cookies-2.0
+Set-Cookie3: blacklisted_tags=extreme_content; path="/"; domain="chan.sankakucomplex.com"; path_spec; expires="2019-12-18 09:39:04Z"; version=0
+Set-Cookie3: login=naturopy; path="/"; domain="chan.sankakucomplex.com"; path_spec; expires="2019-12-18 09:39:04Z"; version=0
+Set-Cookie3: pass_hash=d988ea9549d075886bed4128ae55456fdeda617f; path="/"; domain="chan.sankakucomplex.com"; path_spec; expires="2019-12-18 09:39:04Z"; version=0

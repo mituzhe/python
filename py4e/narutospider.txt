@@ -1,0 +1,5 @@
+库的用法：
+requests库：
+    session()，他的对象怎么使用，他的get()需要哪些参数
+    post()的参数，url，header，data等
+     
