@@ -48,7 +48,7 @@ def isLogin():
     # 第二个是allow_redirects，如果不设置，session访问时，服务器返回302，
     # 然后session会自动重定向到登录页面，获取到登录页面之后，变成200的状态码
     # allow_redirects = False  就是不允许重定向
-    # , headers = header, allow_redirects = False)
+    # headers = header, allow_redirects = False)
     responseRes = naturoSession.get(routeUrl)
     print(f'isLogin Status = {responseRes.status_code}')
     if responseRes.status_code != 200:
@@ -63,11 +63,13 @@ def downLoad(page):
     imgUrl_Source = []
     print('Thread-', page, 'start')
     PARAMS = {'tags': 'naruto_pixxx', 'page': str(page)}
+    
     homePage = naturoSession.get(HOME_URL, params=PARAMS)
     while homePage.status_code != 200:
         print('waiting...')
         time.sleep(200)
         homePage = naturoSession.get(HOME_URL, params=PARAMS)
+        
     soup = BeautifulSoup(homePage.text, 'lxml')
     for link in soup.find_all('a'):
         album_url += re.findall('/post/show/[0-9]+', link.get('href'))
